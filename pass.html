@@ -4,21 +4,13 @@
     <meta charset="UTF-8">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/bulma/0.9.4/css/bulma.min.css">
     <title></title>
 </head>
 <body>
 <div class="container is-fluid">
-    <!-- <div class="navi columns">
-        <div class="column is-half">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAA3CAIAAAB7MwY1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARlSURBVFhHtZjLLyRBHMeb8QomLkI8ghWJG4J4HETExSMiXMRh/QEYj3AUK3GQSGYxB+LkdWIlXgnr7LVu4m02zB5FDDMei3nut6tqR2ljZnqmffOdpLvrV59fd1V1V9UIDqfjk+x0OhWm2x12mB4rRgfIarWOj4/n5+eXl5cfHx/TiwrQQXl+fh4dHVWpVAJRSUnJ499HBegUPTIyEhERQdFQZmbmw+NDoHTUt7xYhoaGQkNDGVgQoqOjx8bGrDZrQHRUttvtuhFdWFgYAxN077deivafjproRo1GExwczMCCkJCQMDU1hTGDUhrjD128K6ezq6uLb5DIyMjJqUmkRJErTDYddfDg3d3dfDfiuKenx2KxuNA0Uh4dFUxmU0NDQ3h4OAMLQlxc3MTkxP39PY+mwTLoiL66uqqvr1cFs3ENJSUlrays8A3Cx/tKR6j5zlxTUxMUFMTAgpCYmLj2c80BvYuHfaUjznhj7OzsZFQioNfX19/fsss+0RF0fX2tadUwKhEaZHV11QMa9k5HhNFobG1tZVSilJSUxaVFz2jYCx3FZrO5o6ODUYlSU1NnZ2dRBEniJUbAh3SUYYSgGxmVqKioaHNzk5C9oGHEuKej4M58h8HHqETpX9I3NjcI2TsaRpgbOq4eHByUlZXxgy8nJ2fn14449nxDw27ouLS3t1dYWMioREAfHh6iCJLEezCC39Bxvru7m5eXJ7lrvV4vi0v9ho4T/W89WIxKhNPz83M/0PArHUcnpyeSERIIGv5Pdzj0Z/rKykpGJcrOzj47O/MbDYt0/G5Nt42NjYxKhIXD/v5+IGiY0Q1/DPz3GlpeXsZ1SFJBllFdpGNCaPraxMBEBQUF+wdK3Lt45HCcnp5WVFQwNlFubq4C7e46Ojo+qq6uZmwiDPyLiwu/E7zS6QluNisri7GJkMBgMPiX4A2dnm9vb5eWlvKrFHxyMb1hYSQ3h5ROL2GSq6ur4xMkJydjFLmdmj3YDR3GVUzQSMDYREgw/2OelvLBHuyeDqPAZDLV1tYyNhESbG1voQiSxLs1wtzTYZRhbqqqqmJsouLi4q0tXxMg5kM6jGI8QXt7O2MTpaWlzc3N0VI++L290GFEYE3Q3NzM2EQYRUvLSwrQYQRhPSNJgD7AMPWcwCc6jDg8QVtbG2MTYcG0sLDgIYGvdBih6AN0Mj8pxsbGDg4O4kWTBFPLoMOIvry8xDDlX7SYmJiBgQFszN4/hDw6jAqYarDO4ROoo9X9/f0PD+ImTxIsjw6jDpZ/eJP5zRi2NdiMBbr3oEa1m9sbvAchISEMLwhRUVHT09M2q82VwE86jJo2m62lpYVvIqzoZ2ZmXOs1/+kwTTA8PMzv/NRqdV9fn80uPkFAdBj1X15etFot30RIoP2utVjFPgiIDgPx9PSEBPyqIiMjQ4H/CahBwXjX6XSuPlDsPw5qgNAUeIL4+Hgs4rBbo/t5ZejUIGIbji6lpwrTJRbp+H2ePpPudP4Dekajdabh5m4AAAAASUVORK5CYII="></img>
-        </div>
-        <div class="column"></div>
-        <div class="column">&nbsp;</div>
-
-    </div> -->
-    <div class="box name_block">
-        <div class="content">
+    <div class="box name_block columns">
+        <div class="content column is-two-thirds">
             <p style="margin-bottom: 10px; font-size: 55px;" class="campus">江宁校区</p>
             <p style="margin-bottom: 60px;">研究生请假进出校</p>
             <p style="margin-bottom: 10px;">
@@ -27,7 +19,7 @@
                         <i class="fas fa-user"></i>
                     </span>
                     <span>
-                        <input class="name_input" type="text" value="徐梦蝶" />
+                        <input class="name_input" type="text" value="徐梦蝶"/>
                     </span>
                 </span>
             </p>
@@ -41,6 +33,12 @@
                     </span>
                 </span>
             </p>
+        </div>
+        <div class="column">
+            <input type="file" id="file" class="filepath" accept="image/*">
+            <div class="img_box">
+                <img class="head_img_box" src="">
+            </div>
         </div>
     </div>
     <div class="box has-text-centered time_box">
@@ -59,7 +57,7 @@
             "/>
         </div>
         <div style="padding-top: 70px;">
-            <p class="tag_flag">出校验证通过</p>
+            <p class="tag_flag">入校验证通过</p>
         </div>
     </div>
     <div class="con">
@@ -90,6 +88,15 @@ $(function(){
             $(this).text('出校验证通过')
         }
     });
+
+    $('#file').on('change', function() {
+        var reads = new FileReader();
+        f = document.getElementById('file').files[0];
+        reads.readAsDataURL(f);
+        reads.onload = function (e) {
+            $(".head_img_box").attr('src', this.result);
+        };
+    })
 });
 </script>
 <style lang="css">
@@ -98,6 +105,7 @@ $(function(){
     background: transparent;
     color: white;
     border: transparent;
+    width: 400px;
 }
 .box {
     border-radius: 15px;
@@ -175,6 +183,17 @@ $(function(){
 	margin:0 auto;
 	position:relative;
 	z-index:2;
+}
+#file{
+    opacity: 0;
+}
+.img_box{
+    height: 100%;
+    padding: 0 15px 20px 0;
+}
+.img_box img{
+    width: 100%;
+    height: 100%;
 }
 </style>
 </html>
